@@ -1,6 +1,9 @@
 ---
 title: "OpenCore UART16550 Porting from Wishbone to AXI"
 date: 2018-03-04T11:33:09+08:00
+categories: [fpga]
+tags: [opencores, vivado, fpga, uart16550, wishbone, axi, zedboard]
+
 draft: false
 ---
 

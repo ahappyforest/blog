@@ -1,6 +1,8 @@
 ---
 title: "Codeviz 工具编译与使用"
 date: 2018-03-04T11:24:57+08:00
+categories: [toolchain]
+tags: [gcc, codeviz, graphviz, doxygen, code graph]
 draft: false
 ---
 
@@ -18,7 +20,7 @@ $ ./install_gcc-4.6.2.sh /usr/local/gcc-graph
 codeviz目录下的bin/目录就是使用的脚本, 所以也不需要安装, 唯一需要做的事情是需要下载gcc-4.6.2并打上patch, codeviz将使用我们生成的gcc来生成调用关系.为了能让该gcc被调用, 可以这样:
 
 ```
-exportPATH=/usr/local/gcc-graph/bin:$PATH
+export PATH=/usr/local/gcc-graph/bin:$PATH
 ```
 
 ## gcc-4.6.2编译问题解决1(已经废弃, 请按照gcc-4.6.2编译问题解决2走)
