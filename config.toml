@@ -24,7 +24,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   name = "主页"
   weight = 10
   identifier = "home"
-  url = "/"
+  url = "/post/"
 [[menu.main]]
   name = "归档"
   weight = 20
@@ -42,7 +42,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   url = "/categories/"
 
 [params]
-  version = "3.x"           # Used to give a friendly message when you have an incompatible update
+  version = "4.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
   since = "2017"            # Site creation time          # 站点建立时间
@@ -58,15 +58,15 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   dateFormatToUse = "2006-01-02"
 
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  moreMeta = false
+  moreMeta = true
 
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
-  autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
+  autoCollapseToc = true   # Auto expand and collapse toc                              # 目录自动展开/折叠
   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
-  mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
-  mathjaxEnableSingleDollar = false                                                     # 是否使用 $...$ 即可進行inline latex渲染
+  mathjax = true           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
+  mathjaxEnableSingleDollar = true                                                     # 是否使用 $...$ 即可進行inline latex渲染
 
   postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
   linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
