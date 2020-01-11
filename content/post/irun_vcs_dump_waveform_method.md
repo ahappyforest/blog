@@ -6,7 +6,7 @@ tags: [irun, candence, waveform, fsdb]
 draft: false
 ---
 
-# irun
+## irun
 
 当我们在irun下面需要dump波形文件的时候, 一般会在tb文件中写下如下的代码:
 
@@ -31,7 +31,7 @@ endmodule
 
 `ncelab: *E,STRNOT(tb_top.sv): Passing string variable to this system task/function is currently not supported.`
 
-# vcs
+## vcs
 
 vcs下面我们一般需要dump fsdb, 因为该格式大小会比原生的vcd要小, 而且可以直接被verdi打开, 但由于它是verdi支持的格式, 需要在编译的是加入对应的PLI, 具体操作为:
 
